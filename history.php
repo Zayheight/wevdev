@@ -191,7 +191,7 @@ if (!isset($_SESSION['user_login'])) {
                                 <?php while ($row = $sql->fetch()) { ?>
                                     <tr class="table-light">
                                         <td><?= $row["item_name"] ?></td>
-                                        <td><?= $row["item_price"] ?></td>
+                                        <td><?= $row["item_price"]*$row["item_quantity"] ?></td>
                                         <td><?= $row["item_quantity"] ?></td>
                                         <td><?= $row["order_date"] ?></td>
                                         

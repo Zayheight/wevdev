@@ -16,7 +16,7 @@
 
         if($stmt->execute()){
             echo "Complete editing ".$_POST["mem_id"];
-            header("location:home.php");
+            header("location:profile.php");
         }
 
 
